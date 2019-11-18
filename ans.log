@@ -1,0 +1,200 @@
+2019-11-18 17:01:42,330 p=student u=32402 | [WARNING]: Could not match supplied host pattern, ignoring: playbook-copy.yml
+
+2019-11-18 17:01:42,330 p=student u=32402 | [WARNING]: No hosts matched, nothing to do
+
+2019-11-18 17:01:42,337 p=student u=32402 | ERROR! No argument passed to command module (did you mean to run ansible-playbook?)
+2019-11-18 17:01:55,713 p=student u=32406 |  ______________________
+< PLAY [Copying files] >
+ ----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:01:55,789 p=student u=32406 |  ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:01:57,938 p=student u=32406 | ok: [zoidberg]
+2019-11-18 17:01:58,045 p=student u=32406 | ok: [fry]
+2019-11-18 17:01:58,052 p=student u=32406 | ok: [bender]
+2019-11-18 17:02:05,471 p=student u=32406 | ok: [farnsworth]
+2019-11-18 17:02:05,534 p=student u=32406 |  _____________
+< TASK [Copy] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:02:07,346 p=student u=32406 | changed: [fry]
+2019-11-18 17:02:07,373 p=student u=32406 | changed: [zoidberg]
+2019-11-18 17:02:07,422 p=student u=32406 | changed: [bender]
+2019-11-18 17:02:07,511 p=student u=32406 | changed: [farnsworth]
+2019-11-18 17:02:07,556 p=student u=32406 |  ____________
+< PLAY RECAP >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:02:07,558 p=student u=32406 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:02:07,558 p=student u=32406 | farnsworth                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:02:07,559 p=student u=32406 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:02:07,560 p=student u=32406 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:04:06,035 p=student u=618 | [WARNING]: Could not match supplied host pattern, ignoring: playbook-copy.yml
+
+2019-11-18 17:04:06,036 p=student u=618 | [WARNING]: No hosts matched, nothing to do
+
+2019-11-18 17:04:06,046 p=student u=618 | ERROR! No argument passed to command module (did you mean to run ansible-playbook?)
+2019-11-18 17:04:13,639 p=student u=622 |  ______________________
+< PLAY [Copying files] >
+ ----------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||--WWW |
+                ||     ||
+
+
+2019-11-18 17:04:13,707 p=student u=622 |  ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+   \         ,        ,
+    \       /(        )`
+     \      \ \___   / |
+            /- _  `-/  '
+           (/\/ \ \   /\
+           / /   | `    \
+           O O   ) /    |
+           `-^--'`<     '
+          (_.)  _  )   /
+           `.___/`    /
+             `-----' /
+<----.     __ / __   \
+<----|====O)))==) \) /====
+<----'    `--' `.__,' \
+             |        |
+              \       /
+        ______( (_  / \______
+      ,'  ,-----'   |        \
+      `--{__________)        \/
+
+
+2019-11-18 17:04:15,728 p=student u=622 | ok: [zoidberg]
+2019-11-18 17:04:15,772 p=student u=622 | ok: [bender]
+2019-11-18 17:04:15,796 p=student u=622 | ok: [fry]
+2019-11-18 17:04:22,625 p=student u=622 | ok: [farnsworth]
+2019-11-18 17:04:22,692 p=student u=622 |  _____________
+< TASK [Copy] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:04:24,386 p=student u=622 | ok: [zoidberg]
+2019-11-18 17:04:24,476 p=student u=622 | ok: [fry]
+2019-11-18 17:04:24,485 p=student u=622 | ok: [bender]
+2019-11-18 17:04:24,822 p=student u=622 | ok: [farnsworth]
+2019-11-18 17:04:24,868 p=student u=622 |  ____________
+< PLAY RECAP >
+ ------------
+        \    ,-^-.
+         \   !oYo!
+          \ /./=\.\______
+               ##        )\/\
+                ||-----w||
+                ||      ||
+
+               Cowth Vader
+
+
+2019-11-18 17:04:24,870 p=student u=622 | bender                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:04:24,871 p=student u=622 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:04:24,872 p=student u=622 | fry                        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:04:24,873 p=student u=622 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:06:12,922 p=student u=1295 |  ______________________
+< PLAY [Copying files] >
+ ----------------------
+    \                                  ___-------___
+     \                             _-~~             ~~-_
+      \                         _-~                    /~-_
+             /^\__/^\         /~  \                   /    \
+           /|  O|| O|        /      \_______________/        \
+          | |___||__|      /       /                \          \
+          |          \    /      /                    \          \
+          |   (_______) /______/                        \_________ \
+          |         / /         \                      /            \
+           \         \^\\         \                  /               \     /
+             \         ||           \______________/      _-_       //\__//
+               \       ||------_-~~-_ ------------- \ --/~   ~\    || __/
+                 ~-----||====/~     |==================|       |/~~~~~
+                  (_(__/  ./     /                    \_\      \.
+                         (_(___/                         \_____)_)
+
+
+2019-11-18 17:06:12,992 p=student u=1295 |  ________________________
+< TASK [Gathering Facts] >
+ ------------------------
+  \
+   \          .
+       ___   //
+     {~._.~}// 
+      ( Y )K/  
+     ()~*~()   
+     (_)-(_)   
+     Luke    
+     Skywalker
+     koala   
+
+
+2019-11-18 17:06:14,924 p=student u=1295 | ok: [fry]
+2019-11-18 17:06:15,007 p=student u=1295 | ok: [bender]
+2019-11-18 17:06:15,079 p=student u=1295 | ok: [zoidberg]
+2019-11-18 17:06:21,462 p=student u=1295 | ok: [farnsworth]
+2019-11-18 17:06:21,520 p=student u=1295 |  _____________
+< TASK [Copy] >
+ -------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+
+2019-11-18 17:06:23,126 p=student u=1295 | ok: [bender]
+2019-11-18 17:06:23,175 p=student u=1295 | ok: [fry]
+2019-11-18 17:06:23,265 p=student u=1295 | ok: [zoidberg]
+2019-11-18 17:06:23,308 p=student u=1295 | ok: [farnsworth]
+2019-11-18 17:06:23,366 p=student u=1295 |  ____________
+< PLAY RECAP >
+ ------------
+  \
+   \   \_\_    _/_/
+    \      \__/
+           (oo)\_______
+           (__)\       )\/\
+               ||----w |
+               ||     ||
+
+
+2019-11-18 17:06:23,368 p=student u=1295 | bender                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:06:23,369 p=student u=1295 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:06:23,370 p=student u=1295 | fry                        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-18 17:06:23,371 p=student u=1295 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

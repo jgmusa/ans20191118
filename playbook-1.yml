@@ -1,0 +1,10 @@
+---
+- name: Learning about copy content
+  hosts: planetexpress
+
+  tasks:
+          - name: copy soething into rhe remote fry.txt
+            copy:
+                    dest: ~/fry.txt
+                    content: Time for a break
+                    force: yes
