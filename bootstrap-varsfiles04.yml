@@ -1,0 +1,35 @@
+---
+- name: boostrapping and new user
+  hosts: raiders
+  gather_facts: false
+
+  vars_files:
+    - files/newusers1.yml
+    - files/newusers2.yml
+    - vars/moreindyusers.yml
+
+  tasks:
+  - name: " update apt with latest repo info" 
+    raw: "apt upgrade -y"
+    become: yes
+
+  - name: "bootstrap python install"
+    raw: "apt install -y python3-pip"
+    become: yes
+
+  - name: "Create the new group sanbox"
+    group:
+      name: sandbox
+      state: present
+    become: yes
+
+  - name: add new users to group 'sandbox'
+    user:
+      name: "{{ item }}"
+      comment: throuwaway user account for testing
+      state: present
+      shell: /bin/bash
+      system: no
+      createhome: yes
+    become: yes
+    loop: "{{ users1 + users2 + newusers2 }}"

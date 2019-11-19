@@ -198,3 +198,157 @@
 2019-11-18 17:06:23,369 p=student u=1295 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2019-11-18 17:06:23,370 p=student u=1295 | fry                        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2019-11-18 17:06:23,371 p=student u=1295 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 10:36:37,024 p=student u=3998 | ERROR! vars file files/newuser1.yml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-11-19 10:37:19,885 p=student u=4015 |  __________________________________
+< PLAY [boostrapping and new user] >
+ ----------------------------------
+       \
+        \  ....
+          .    ........
+          .            .
+          .             .
+    .......              .........
+    ..............................
+Elephant inside ASCII snake
+
+
+2019-11-19 10:37:19,955 p=student u=4015 |  _________________________________________
+< TASK [update apt with latest repo info] >
+ -----------------------------------------
+  \     .    _  .    
+   \    |\_|/__/|    
+       / / \/ \  \  
+      /__|O||O|__ \ 
+     |/_ \_/\_/ _\ |  
+     | | (____) | ||  
+     \/\___/\__/  // 
+     (_/         ||
+      |          ||
+      |          ||\   
+       \        //_/  
+        \______//
+       __ || __||
+      (____(____)
+
+
+2019-11-19 10:37:20,077 p=student u=4015 | fatal: [indy]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.10.2.2' (ECDSA) to the list of known hosts.\r\nindy@10.10.2.2: Permission denied (publickey,password).", "unreachable": true}
+2019-11-19 10:37:20,120 p=student u=4015 |  ____________
+< PLAY RECAP >
+ ------------
+   \         ,        ,
+    \       /(        )`
+     \      \ \___   / |
+            /- _  `-/  '
+           (/\/ \ \   /\
+           / /   | `    \
+           O O   ) /    |
+           `-^--'`<     '
+          (_.)  _  )   /
+           `.___/`    /
+             `-----' /
+<----.     __ / __   \
+<----|====O)))==) \) /====
+<----'    `--' `.__,' \
+             |        |
+              \       /
+        ______( (_  / \______
+      ,'  ,-----'   |        \
+      `--{__________)        \/
+
+
+2019-11-19 10:37:20,121 p=student u=4015 | indy                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 10:56:54,585 p=student u=4147 | PLAY [boostrapping and new user] ***************************************************************************************************************************************
+2019-11-19 10:56:54,609 p=student u=4147 | TASK [update apt with latest repo info] ********************************************************************************************************************************
+2019-11-19 10:56:57,170 p=student u=4147 | changed: [indy]
+2019-11-19 10:56:57,179 p=student u=4147 | TASK [bootstrap python install] ****************************************************************************************************************************************
+2019-11-19 10:58:47,890 p=student u=4147 | changed: [indy]
+2019-11-19 10:58:47,899 p=student u=4147 | TASK [Create the new group sanbox] *************************************************************************************************************************************
+2019-11-19 10:58:48,924 p=student u=4147 | changed: [indy]
+2019-11-19 10:58:48,934 p=student u=4147 | TASK [add new users to group 'sandbox'] ********************************************************************************************************************************
+2019-11-19 10:58:50,246 p=student u=4147 | changed: [indy] => (item=marian)
+2019-11-19 10:58:50,883 p=student u=4147 | changed: [indy] => (item=belloq)
+2019-11-19 10:58:51,614 p=student u=4147 | changed: [indy] => (item=willie)
+2019-11-19 10:58:52,302 p=student u=4147 | changed: [indy] => (item=elsa)
+2019-11-19 10:58:53,003 p=student u=4147 | changed: [indy] => (item=walter)
+2019-11-19 10:58:53,626 p=student u=4147 | changed: [indy] => (item=joneser)
+2019-11-19 10:58:53,634 p=student u=4147 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 10:58:53,634 p=student u=4147 | indy                       : ok=4    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 11:24:31,019 p=student u=5834 | ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/ans/bootstrap-varsfiles02.yml': line 20, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: "apt install packages"
+    apt: name: "{{ apt_pkgs }}"
+             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2019-11-19 11:25:25,332 p=student u=5900 | ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/student/ans/bootstrap-varsfiles02.yml': line 20, column 14, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: "apt install packages"
+    apt: name: "{{ apt_pkgs }}"
+             ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2019-11-19 11:28:52,998 p=student u=5932 | PLAY [loop over packages] **********************************************************************************************************************************************
+2019-11-19 11:28:53,039 p=student u=5932 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 11:28:54,766 p=student u=5932 | ok: [indy]
+2019-11-19 11:28:54,786 p=student u=5932 | TASK [update apt] ******************************************************************************************************************************************************
+2019-11-19 11:29:04,078 p=student u=5932 | changed: [indy]
+2019-11-19 11:29:04,097 p=student u=5932 | TASK [bootstrap python3 install] ***************************************************************************************************************************************
+2019-11-19 11:29:06,437 p=student u=5932 | changed: [indy] => (item=python3)
+2019-11-19 11:29:29,864 p=student u=5932 | changed: [indy] => (item=aptitude)
+2019-11-19 11:29:29,885 p=student u=5932 | TASK [apt install packages] ********************************************************************************************************************************************
+2019-11-19 11:30:14,124 p=student u=5932 | [WARNING]: Updating cache and auto-installing missing dependency: python3-apt
+
+2019-11-19 11:30:14,125 p=student u=5932 | changed: [indy]
+2019-11-19 11:30:14,129 p=student u=5932 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 11:30:14,130 p=student u=5932 | indy                       : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 12:18:15,604 p=student u=8033 | PLAY [boostrapping and new user] ***************************************************************************************************************************************
+2019-11-19 12:18:15,639 p=student u=8033 | TASK [update apt with latest repo info] ********************************************************************************************************************************
+2019-11-19 12:18:18,222 p=student u=8033 | changed: [indy]
+2019-11-19 12:18:18,228 p=student u=8033 | TASK [bootstrap python install] ****************************************************************************************************************************************
+2019-11-19 12:18:20,887 p=student u=8033 | changed: [indy]
+2019-11-19 12:18:20,894 p=student u=8033 | TASK [Create the new group sanbox] *************************************************************************************************************************************
+2019-11-19 12:18:21,715 p=student u=8033 | ok: [indy]
+2019-11-19 12:18:21,728 p=student u=8033 | TASK [add new users to group 'sandbox'] ********************************************************************************************************************************
+2019-11-19 12:18:22,654 p=student u=8033 | ok: [indy] => (item=marian)
+2019-11-19 12:18:23,189 p=student u=8033 | ok: [indy] => (item=belloq)
+2019-11-19 12:18:23,719 p=student u=8033 | ok: [indy] => (item=willie)
+2019-11-19 12:18:24,242 p=student u=8033 | ok: [indy] => (item=elsa)
+2019-11-19 12:18:24,739 p=student u=8033 | ok: [indy] => (item=walter)
+2019-11-19 12:18:25,282 p=student u=8033 | ok: [indy] => (item=joneser)
+2019-11-19 12:18:25,929 p=student u=8033 | changed: [indy] => (item=LaoChe)
+2019-11-19 12:18:26,654 p=student u=8033 | changed: [indy] => (item=MolaRam)
+2019-11-19 12:18:26,663 p=student u=8033 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 12:18:26,663 p=student u=8033 | indy                       : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

@@ -1,0 +1,22 @@
+---
+- name: loop over packages
+  hosts: raiders
+  gather_facts: yes
+
+  vars_files:
+  - files/aptpkgs.yml
+
+  tasks:
+  - name: "update apt"
+    raw: "apt update -y"
+    become: yes
+
+  - name: "bootstrap python3 install"
+    raw: "apt install -y {{ item }}"
+    loop: "{{ bootstrap_packages }}"
+    become: yes
+
+  - name: "apt install packages"
+    apt: 
+      name: "{{ apt_pkgs }}"
+    become: yes
