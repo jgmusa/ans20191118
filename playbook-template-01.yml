@@ -1,0 +1,16 @@
+---
+- name: using template
+  hosts: planetexpress
+
+  vars:
+    ship_name: bang
+    type_of_ship: titanium
+    engine_tech: fusion
+    type_of_fuel: plutonium
+
+  tasks:
+    - name: Use tempalte to render a finshed file
+      template: 
+        src: templates/ship.cfg.j2
+        dest: ~/ship.cfg
+

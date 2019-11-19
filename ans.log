@@ -352,3 +352,278 @@ Should be written as:
 2019-11-19 12:18:26,654 p=student u=8033 | changed: [indy] => (item=MolaRam)
 2019-11-19 12:18:26,663 p=student u=8033 | PLAY RECAP *************************************************************************************************************************************************************
 2019-11-19 12:18:26,663 p=student u=8033 | indy                       : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:16:39,489 p=student u=9384 | PLAY [Our first play] **************************************************************************************************************************************************
+2019-11-19 14:16:39,523 p=student u=9384 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:16:42,066 p=student u=9384 | ok: [zoidberg]
+2019-11-19 14:16:42,071 p=student u=9384 | ok: [bender]
+2019-11-19 14:16:42,114 p=student u=9384 | ok: [fry]
+2019-11-19 14:16:52,885 p=student u=9384 | ok: [farnsworth]
+2019-11-19 14:16:52,903 p=student u=9384 | TASK [Install stem] ****************************************************************************************************************************************************
+2019-11-19 14:16:56,510 p=student u=9384 | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2019-11-19 14:16:56,513 p=student u=9384 | fatal: [farnsworth]: FAILED! => {"changed": false, "cmd": "apt-get update", "msg": "[Errno 2] No such file or directory", "rc": 2}
+2019-11-19 14:17:39,038 p=student u=9384 | changed: [zoidberg]
+2019-11-19 14:17:43,420 p=student u=9384 | changed: [bender]
+2019-11-19 14:17:43,664 p=student u=9384 | changed: [fry]
+2019-11-19 14:17:43,670 p=student u=9384 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:17:43,671 p=student u=9384 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:17:43,672 p=student u=9384 | farnsworth                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:17:43,673 p=student u=9384 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:17:43,673 p=student u=9384 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:19:59,717 p=student u=11328 | PLAY [Our first play] **************************************************************************************************************************************************
+2019-11-19 14:19:59,748 p=student u=11328 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:20:01,387 p=student u=11328 | ok: [zoidberg]
+2019-11-19 14:20:01,548 p=student u=11328 | ok: [fry]
+2019-11-19 14:20:01,554 p=student u=11328 | ok: [bender]
+2019-11-19 14:20:01,573 p=student u=11328 | TASK [Install sl in all machines] **************************************************************************************************************************************
+2019-11-19 14:20:07,982 p=student u=11328 | ok: [fry]
+2019-11-19 14:20:08,715 p=student u=11328 | ok: [bender]
+2019-11-19 14:20:08,716 p=student u=11328 | ok: [zoidberg]
+2019-11-19 14:20:08,721 p=student u=11328 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:20:08,722 p=student u=11328 | bender                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:20:08,723 p=student u=11328 | fry                        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:20:08,724 p=student u=11328 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:21:12,927 p=student u=11698 | ERROR! the playbook: /home/student/ans/playbook-apt3.yml could not be found
+2019-11-19 14:21:20,852 p=student u=11700 | ERROR! the playbook: /home/student/ans/playbook-apt3.yml could not be found
+2019-11-19 14:23:25,692 p=student u=11704 | PLAY [Our first play] **************************************************************************************************************************************************
+2019-11-19 14:23:25,726 p=student u=11704 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:23:27,575 p=student u=11704 | ok: [zoidberg]
+2019-11-19 14:23:27,621 p=student u=11704 | ok: [fry]
+2019-11-19 14:23:27,689 p=student u=11704 | ok: [bender]
+2019-11-19 14:23:34,367 p=student u=11704 | ok: [farnsworth]
+2019-11-19 14:23:34,385 p=student u=11704 | TASK [Install ALL machines] ********************************************************************************************************************************************
+2019-11-19 14:23:34,649 p=student u=11704 | skipping: [farnsworth]
+2019-11-19 14:23:41,255 p=student u=11704 | ok: [bender]
+2019-11-19 14:23:41,446 p=student u=11704 | ok: [zoidberg]
+2019-11-19 14:23:41,635 p=student u=11704 | ok: [fry]
+2019-11-19 14:23:41,641 p=student u=11704 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:23:41,641 p=student u=11704 | bender                     : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:23:41,642 p=student u=11704 | farnsworth                 : ok=1    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-11-19 14:23:41,643 p=student u=11704 | fry                        : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:23:41,643 p=student u=11704 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:27:53,966 p=student u=13128 | PLAY [install sl with ym] **********************************************************************************************************************************************
+2019-11-19 14:27:54,000 p=student u=13128 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:27:57,276 p=student u=13128 | ok: [zoidberg]
+2019-11-19 14:27:57,350 p=student u=13128 | ok: [fry]
+2019-11-19 14:27:57,371 p=student u=13128 | ok: [bender]
+2019-11-19 14:28:04,112 p=student u=13128 | ok: [farnsworth]
+2019-11-19 14:28:04,143 p=student u=13128 | TASK [Install sl with yum] *********************************************************************************************************************************************
+2019-11-19 14:28:29,788 p=student u=13128 | changed: [farnsworth]
+2019-11-19 14:28:48,090 p=student u=13128 | [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2019-11-19 14:28:48,098 p=student u=13128 | changed: [bender]
+2019-11-19 14:28:48,241 p=student u=13128 | changed: [fry]
+2019-11-19 14:28:48,506 p=student u=13128 | changed: [zoidberg]
+2019-11-19 14:28:48,510 p=student u=13128 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:28:48,510 p=student u=13128 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:28:48,510 p=student u=13128 | farnsworth                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:28:48,510 p=student u=13128 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:28:48,511 p=student u=13128 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:34:37,330 p=student u=15264 | PLAY [install sl with ym] **********************************************************************************************************************************************
+2019-11-19 14:34:37,369 p=student u=15264 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:34:39,588 p=student u=15264 | ok: [fry]
+2019-11-19 14:34:39,682 p=student u=15264 | ok: [bender]
+2019-11-19 14:34:39,698 p=student u=15264 | ok: [zoidberg]
+2019-11-19 14:34:46,702 p=student u=15264 | ok: [farnsworth]
+2019-11-19 14:34:46,722 p=student u=15264 | TASK [Install sl with yum] *********************************************************************************************************************************************
+2019-11-19 14:34:46,910 p=student u=15264 | skipping: [bender]
+2019-11-19 14:34:46,919 p=student u=15264 | skipping: [fry]
+2019-11-19 14:34:46,944 p=student u=15264 | skipping: [zoidberg]
+2019-11-19 14:34:48,531 p=student u=15264 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "No package matching 'fortune' found available, installed or updated", "rc": 126, "results": ["No package matching 'fortune' found available, installed or updated"]}
+2019-11-19 14:34:48,549 p=student u=15264 | TASK [install fortune ubu] *********************************************************************************************************************************************
+2019-11-19 14:35:03,498 p=student u=15264 | changed: [bender]
+2019-11-19 14:35:03,715 p=student u=15264 | changed: [zoidberg]
+2019-11-19 14:35:03,821 p=student u=15264 | changed: [fry]
+2019-11-19 14:35:03,825 p=student u=15264 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:35:03,826 p=student u=15264 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-11-19 14:35:03,826 p=student u=15264 | farnsworth                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:35:03,826 p=student u=15264 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-11-19 14:35:03,826 p=student u=15264 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2019-11-19 14:39:44,573 p=student u=15990 | ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/ans/playbook-yum3.yml': line 13, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: "Update yum repos"
+   ^ here
+
+2019-11-19 14:41:19,635 p=student u=15998 | ERROR! Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/home/student/ans/playbook-yum3.yml': line 13, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+   - name: "Update yum repos"
+   ^ here
+
+2019-11-19 14:43:31,242 p=student u=16005 | PLAY [Install EPEL] ****************************************************************************************************************************************************
+2019-11-19 14:43:31,273 p=student u=16005 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 14:43:33,403 p=student u=16005 | ok: [zoidberg]
+2019-11-19 14:43:33,515 p=student u=16005 | ok: [bender]
+2019-11-19 14:43:33,582 p=student u=16005 | ok: [fry]
+2019-11-19 14:43:39,183 p=student u=16005 | ok: [farnsworth]
+2019-11-19 14:43:39,208 p=student u=16005 | TASK [Install epel] ****************************************************************************************************************************************************
+2019-11-19 14:43:39,352 p=student u=16005 | skipping: [bender]
+2019-11-19 14:43:39,385 p=student u=16005 | skipping: [fry]
+2019-11-19 14:43:39,389 p=student u=16005 | skipping: [zoidberg]
+2019-11-19 14:43:40,710 p=student u=16005 | ok: [farnsworth]
+2019-11-19 14:43:40,739 p=student u=16005 | TASK [Update yum repos] ************************************************************************************************************************************************
+2019-11-19 14:43:40,841 p=student u=16005 | skipping: [bender]
+2019-11-19 14:43:40,920 p=student u=16005 | skipping: [zoidberg]
+2019-11-19 14:43:40,934 p=student u=16005 | skipping: [fry]
+2019-11-19 14:43:57,796 p=student u=16005 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "No package matching 'bastet' found available, installed or updated", "rc": 126, "results": ["No package matching 'bastet' found available, installed or updated"]}
+2019-11-19 14:43:57,801 p=student u=16005 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 14:43:57,801 p=student u=16005 | bender                     : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 14:43:57,802 p=student u=16005 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 14:43:57,802 p=student u=16005 | fry                        : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 14:43:57,803 p=student u=16005 | zoidberg                   : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 15:43:06,460 p=student u=16730 | PLAY [Install EPEL] ****************************************************************************************************************************************************
+2019-11-19 15:43:06,488 p=student u=16730 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 15:43:08,629 p=student u=16730 | ok: [zoidberg]
+2019-11-19 15:43:08,736 p=student u=16730 | ok: [bender]
+2019-11-19 15:43:08,798 p=student u=16730 | ok: [fry]
+2019-11-19 15:43:14,372 p=student u=16730 | ok: [farnsworth]
+2019-11-19 15:43:14,395 p=student u=16730 | TASK [Install epel] ****************************************************************************************************************************************************
+2019-11-19 15:43:14,523 p=student u=16730 | skipping: [bender]
+2019-11-19 15:43:14,561 p=student u=16730 | skipping: [fry]
+2019-11-19 15:43:14,580 p=student u=16730 | skipping: [zoidberg]
+2019-11-19 15:43:15,981 p=student u=16730 | ok: [farnsworth]
+2019-11-19 15:43:16,001 p=student u=16730 | TASK [Update yum repos] ************************************************************************************************************************************************
+2019-11-19 15:43:16,134 p=student u=16730 | skipping: [bender]
+2019-11-19 15:43:16,167 p=student u=16730 | skipping: [fry]
+2019-11-19 15:43:16,191 p=student u=16730 | skipping: [zoidberg]
+2019-11-19 15:43:21,385 p=student u=16730 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "No package matching 'bastet' found available, installed or updated", "rc": 126, "results": ["No package matching 'bastet' found available, installed or updated"]}
+2019-11-19 15:43:21,389 p=student u=16730 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 15:43:21,391 p=student u=16730 | bender                     : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 15:43:21,391 p=student u=16730 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 15:43:21,392 p=student u=16730 | fry                        : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 15:43:21,393 p=student u=16730 | zoidberg                   : ok=1    changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2019-11-19 16:10:30,300 p=student u=17387 | PLAY [using template] **************************************************************************************************************************************************
+2019-11-19 16:10:30,327 p=student u=17387 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:10:32,095 p=student u=17387 | ok: [bender]
+2019-11-19 16:10:32,317 p=student u=17387 | ok: [fry]
+2019-11-19 16:10:32,324 p=student u=17387 | ok: [zoidberg]
+2019-11-19 16:10:38,608 p=student u=17387 | ok: [farnsworth]
+2019-11-19 16:10:38,633 p=student u=17387 | TASK [Use tempalte to render a finshed file] ***************************************************************************************************************************
+2019-11-19 16:10:38,770 p=student u=17387 | fatal: [bender]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:10:38,832 p=student u=17387 | fatal: [fry]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:10:38,846 p=student u=17387 | fatal: [zoidberg]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:10:38,942 p=student u=17387 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:10:38,945 p=student u=17387 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:10:38,946 p=student u=17387 | bender                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:10:38,947 p=student u=17387 | farnsworth                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:10:38,947 p=student u=17387 | fry                        : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:10:38,948 p=student u=17387 | zoidberg                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:11:33,714 p=student u=17870 | PLAY [using template] **************************************************************************************************************************************************
+2019-11-19 16:11:33,748 p=student u=17870 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:11:35,769 p=student u=17870 | ok: [zoidberg]
+2019-11-19 16:11:35,819 p=student u=17870 | ok: [bender]
+2019-11-19 16:11:35,825 p=student u=17870 | ok: [fry]
+2019-11-19 16:11:42,272 p=student u=17870 | ok: [farnsworth]
+2019-11-19 16:11:42,292 p=student u=17870 | TASK [Use tempalte to render a finshed file] ***************************************************************************************************************************
+2019-11-19 16:11:42,455 p=student u=17870 | fatal: [bender]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:11:42,485 p=student u=17870 | fatal: [fry]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:11:42,500 p=student u=17870 | fatal: [zoidberg]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:11:42,625 p=student u=17870 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "Could not find or access 'templates/ship.cfg.j2'\nSearched in:\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2\n\t/home/student/ans/templates/templates/ship.cfg.j2\n\t/home/student/ans/templates/ship.cfg.j2 on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:11:42,629 p=student u=17870 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:11:42,629 p=student u=17870 | bender                     : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:11:42,630 p=student u=17870 | farnsworth                 : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:11:42,631 p=student u=17870 | fry                        : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:11:42,632 p=student u=17870 | zoidberg                   : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:12:18,950 p=student u=18261 | PLAY [using template] **************************************************************************************************************************************************
+2019-11-19 16:12:18,981 p=student u=18261 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:12:20,951 p=student u=18261 | ok: [bender]
+2019-11-19 16:12:20,964 p=student u=18261 | ok: [fry]
+2019-11-19 16:12:20,992 p=student u=18261 | ok: [zoidberg]
+2019-11-19 16:12:27,684 p=student u=18261 | ok: [farnsworth]
+2019-11-19 16:12:27,706 p=student u=18261 | TASK [Use tempalte to render a finshed file] ***************************************************************************************************************************
+2019-11-19 16:12:29,473 p=student u=18261 | changed: [bender]
+2019-11-19 16:12:29,490 p=student u=18261 | changed: [zoidberg]
+2019-11-19 16:12:29,549 p=student u=18261 | changed: [fry]
+2019-11-19 16:12:29,718 p=student u=18261 | changed: [farnsworth]
+2019-11-19 16:12:29,724 p=student u=18261 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:12:29,725 p=student u=18261 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:12:29,726 p=student u=18261 | farnsworth                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:12:29,727 p=student u=18261 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:12:29,727 p=student u=18261 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:29:46,037 p=student u=18949 | ERROR! vars file /home/student/tags/vars/vars.yml was not found on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2019-11-19 16:30:45,816 p=student u=18963 | PLAY [Playbook with tags] **********************************************************************************************************************************************
+2019-11-19 16:30:45,846 p=student u=18963 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:30:48,067 p=student u=18963 | ok: [bender]
+2019-11-19 16:30:48,105 p=student u=18963 | ok: [fry]
+2019-11-19 16:30:48,132 p=student u=18963 | ok: [zoidberg]
+2019-11-19 16:30:54,941 p=student u=18963 | ok: [farnsworth]
+2019-11-19 16:30:54,969 p=student u=18963 | TASK [deploy manifest] *************************************************************************************************************************************************
+2019-11-19 16:30:57,097 p=student u=18963 | changed: [zoidberg]
+2019-11-19 16:30:57,108 p=student u=18963 | changed: [fry]
+2019-11-19 16:30:57,111 p=student u=18963 | changed: [bender]
+2019-11-19 16:30:57,199 p=student u=18963 | changed: [farnsworth]
+2019-11-19 16:30:57,204 p=student u=18963 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:30:57,205 p=student u=18963 | bender                     : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:30:57,206 p=student u=18963 | farnsworth                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:30:57,206 p=student u=18963 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:30:57,207 p=student u=18963 | zoidberg                   : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:32:07,727 p=student u=19650 | PLAY [Playbook with tags] **********************************************************************************************************************************************
+2019-11-19 16:32:07,765 p=student u=19650 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:32:09,783 p=student u=19650 | ok: [zoidberg]
+2019-11-19 16:32:09,857 p=student u=19650 | ok: [bender]
+2019-11-19 16:32:09,900 p=student u=19650 | ok: [fry]
+2019-11-19 16:32:16,773 p=student u=19650 | ok: [farnsworth]
+2019-11-19 16:32:16,800 p=student u=19650 | TASK [deploy manifest] *************************************************************************************************************************************************
+2019-11-19 16:32:18,504 p=student u=19650 | ok: [fry]
+2019-11-19 16:32:18,626 p=student u=19650 | ok: [bender]
+2019-11-19 16:32:18,665 p=student u=19650 | ok: [zoidberg]
+2019-11-19 16:32:19,958 p=student u=19650 | ok: [farnsworth]
+2019-11-19 16:32:19,988 p=student u=19650 | TASK [install charts] **************************************************************************************************************************************************
+2019-11-19 16:32:20,271 p=student u=19650 | fatal: [bender]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'start' is undefined"}
+2019-11-19 16:32:20,358 p=student u=19650 | fatal: [fry]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'start' is undefined"}
+2019-11-19 16:32:20,384 p=student u=19650 | fatal: [zoidberg]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'start' is undefined"}
+2019-11-19 16:32:20,463 p=student u=19650 | fatal: [farnsworth]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'start' is undefined"}
+2019-11-19 16:32:20,469 p=student u=19650 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:32:20,470 p=student u=19650 | bender                     : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:32:20,471 p=student u=19650 | farnsworth                 : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:32:20,473 p=student u=19650 | fry                        : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:32:20,475 p=student u=19650 | zoidberg                   : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:35:00,231 p=student u=20434 | PLAY [Playbook with tags] **********************************************************************************************************************************************
+2019-11-19 16:35:00,259 p=student u=20434 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:35:02,130 p=student u=20434 | ok: [zoidberg]
+2019-11-19 16:35:02,187 p=student u=20434 | ok: [fry]
+2019-11-19 16:35:02,239 p=student u=20434 | ok: [bender]
+2019-11-19 16:35:08,854 p=student u=20434 | ok: [farnsworth]
+2019-11-19 16:35:08,876 p=student u=20434 | TASK [deploy manifest] *************************************************************************************************************************************************
+2019-11-19 16:35:10,606 p=student u=20434 | ok: [bender]
+2019-11-19 16:35:10,697 p=student u=20434 | ok: [fry]
+2019-11-19 16:35:10,711 p=student u=20434 | ok: [zoidberg]
+2019-11-19 16:35:10,822 p=student u=20434 | ok: [farnsworth]
+2019-11-19 16:35:10,838 p=student u=20434 | TASK [install charts] **************************************************************************************************************************************************
+2019-11-19 16:35:12,587 p=student u=20434 | changed: [zoidberg]
+2019-11-19 16:35:12,608 p=student u=20434 | changed: [bender]
+2019-11-19 16:35:12,649 p=student u=20434 | changed: [fry]
+2019-11-19 16:35:13,008 p=student u=20434 | changed: [farnsworth]
+2019-11-19 16:35:13,015 p=student u=20434 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:35:13,015 p=student u=20434 | bender                     : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:35:13,016 p=student u=20434 | farnsworth                 : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:35:13,016 p=student u=20434 | fry                        : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:35:13,017 p=student u=20434 | zoidberg                   : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:36:02,586 p=student u=21384 | PLAY [Playbook with tags] **********************************************************************************************************************************************
+2019-11-19 16:36:02,616 p=student u=21384 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:36:04,000 p=student u=21384 | ok: [fry]
+2019-11-19 16:36:04,021 p=student u=21384 | TASK [depliy ordre to crew] ********************************************************************************************************************************************
+2019-11-19 16:36:04,125 p=student u=21384 | fatal: [fry]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/student/ans/templates/orders.tt.j2' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2019-11-19 16:36:04,128 p=student u=21384 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:36:04,130 p=student u=21384 | fry                        : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-11-19 16:36:46,015 p=student u=21486 | PLAY [Playbook with tags] **********************************************************************************************************************************************
+2019-11-19 16:36:46,042 p=student u=21486 | TASK [Gathering Facts] *************************************************************************************************************************************************
+2019-11-19 16:36:47,258 p=student u=21486 | ok: [fry]
+2019-11-19 16:36:47,282 p=student u=21486 | TASK [depliy ordre to crew] ********************************************************************************************************************************************
+2019-11-19 16:36:48,432 p=student u=21486 | changed: [fry]
+2019-11-19 16:36:48,436 p=student u=21486 | PLAY RECAP *************************************************************************************************************************************************************
+2019-11-19 16:36:48,437 p=student u=21486 | fry                        : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

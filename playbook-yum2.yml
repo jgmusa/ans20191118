@@ -1,0 +1,19 @@
+---
+- name: install sl with ym
+  hosts: planetexpress
+  gather_facts: yes
+
+  tasks:
+    - name: Install sl with yum
+      yum:
+        name: fortune
+        state: present
+      become: yes
+      when: ansible_distribution == "CentOS"
+
+    - name: install fortune ubu
+      apt:
+        name: fortune
+        state: present
+      become: yes
+      when: ansible_distribution == "Ubuntu"
