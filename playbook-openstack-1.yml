@@ -1,0 +1,12 @@
+---
+- name: convert bash to ansible
+  hosts: localhost
+
+  tasks:
+          - name: pull a list of servers on openstack
+           os_server_info:
+                   cloud: rajeshcloud
+                   # server:
+                   filters:
+                           vm_state: active
+

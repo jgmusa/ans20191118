@@ -1,0 +1,25 @@
+---
+- name: harvest astros
+  hosts: localhost
+  connection: local
+
+  vars_files:
+          - vars/astros.yml
+
+  tasks:
+          - name: print out jessic meir
+            debug:
+                    msg: "{{ astros.people[5].name }}"
+
+          - name: print out all astros
+            debug:
+                    msg: "{{ astros.people }}"
+
+          - name: print out number of astros on ISS
+            debug:
+                    msg: "{{ astros.number }}"
+
+          - name: print differnt
+            debug:
+                    msg: "{{ item.name }}"
+            loop: "{{ astros.people }}"

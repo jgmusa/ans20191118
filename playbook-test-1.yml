@@ -1,0 +1,22 @@
+---
+- name: recalling vars
+  hosts: localhost
+
+  vars:
+    swampcreatures:
+      reptile: alligator
+      amphibian: frog
+      insect:
+        - mosquito
+        - beetle
+        - centipede
+
+  tasks:
+    - name: Print to the screen
+      debug:
+        msg: "{{ swampcreatures.reptile }}"
+
+    - name: Print all insect
+      debug:
+        msg: "{{ item }}"
+      loop: "{{ swampcreatures.insect }}"

@@ -1,0 +1,8 @@
+---
+- name: test
+  vars_prompt:
+          - name: continue or not
+
+            continueornot.lower() == "n"
+
+            # we can use method from Python
